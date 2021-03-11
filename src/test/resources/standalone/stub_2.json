@@ -1,0 +1,32 @@
+{
+  "request": {
+    "method": "ANY",
+    "urlPattern": "/group/([a-z]*)",
+    "headers": {
+      "Content-Type": {
+        "equalTo": "application/json",
+        "caseInsensitive": true
+      }
+    },
+    "cookies": {
+      "web-site": {
+        "contains": "@chameleon.ru"
+      }
+    },
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$.name"
+      },
+      {
+        "matchesJsonPath": "[?(@.year == 1975)]"
+      },
+      {
+        "matchesJsonPath": "[?(@.songs[1] == 'Hallowed Be Thy Name')]"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "success_message.txt"
+  }
+}

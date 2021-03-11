@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "ANY",
+    "url": "/musician",
+    "headers": {
+      "Content-Type": {
+        "equalTo": "application/json",
+        "caseInsensitive": true
+      }
+    },
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "[?(@.name == 'Nikki Sixx')]"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "musicians/nikki_sixx.json"
+  }
+}

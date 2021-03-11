@@ -1,0 +1,14 @@
+{
+  "name": "1",
+  "scenarioName": "Add group",
+  "requiredScenarioState": "Started",
+  "newScenarioState": "Group added",
+  "request": {
+    "method": "POST",
+    "url": "/groups"
+  },
+  "response": {
+    "status": 200,
+    "body": "Group added"
+  }
+}

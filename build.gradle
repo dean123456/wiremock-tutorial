@@ -1,0 +1,27 @@
+plugins {
+    id 'org.springframework.boot' version '2.3.3.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+}
+
+group = 'ru.chameleon'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'com.github.tomakehurst:wiremock-jre8:2.27.0'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.12.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.0'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.12.0'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.12.0'
+}
+
+test {
+    useJUnitPlatform()
+}

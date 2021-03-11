@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/ironMaiden/jsonBody"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "group": "Iron Maiden",
+      "frontMan": "Bruce Dickinson"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "3",
+  "scenarioName": "Add group",
+  "requiredScenarioState": "Group added",
+  "request": {
+    "method": "GET",
+    "url": "/groups"
+  },
+  "response": {
+    "status": 200,
+    "body": "Count: 1 group"
+  }
+}
